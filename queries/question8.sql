@@ -1,0 +1,2 @@
+SELECT funding_per_student_usd,avg_test_score_percent
+FROM education_inequality;
