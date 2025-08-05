@@ -2,6 +2,7 @@
 ![Education](assets/education.png)
 ***
 The education_inequality_data.csv file contains a dataset of various educational institutions, with information on their location, type, funding per student, average test scores, and key demographic indicators such as student-teacher ratio and percentages of low-income and minority students. It also includes data on internet access and dropout rates, which are essential for analyzing disparities in education.
+***
 🔍 SQL queries? Check them out [here](/queries/):
 # Background
 Driven by a quest to understand and analyze educational disparities across various institutions, this analysis leverages a comprehensive dataset on education inequality. The aim is to pinpoint key metrics impacting student outcomes, identify trends in funding and demographics, and uncover actionable insights into the factors contributing to educational inequality. The analysis focuses on metrics such as funding per student, average test scores, student-teacher ratios, and demographic indicators like the percentage of low-income and minority students to maximize the understanding of educational dynamics.
