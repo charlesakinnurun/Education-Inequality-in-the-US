@@ -47,20 +47,20 @@ CREATE TABLE education_inequality(
 );
 ```
 # Analysis
-### List all schools in California with a funding per student greater than $15,000 and an average test score below 70%.
+#### List all schools in California with a funding per student greater than $15,000 and an average test score below 70%.
 ```sql
 SELECT school_name FROM education_inequality
 WHERE state = "California"
 AND funding_per_student_usd > 15000 
 AND avg_test_score_percent < 70;
 ```
-### What is the average 'dropout_rate_percent' for schools where 'internet_access_percent' is less than 70%?
+#### What is the average 'dropout_rate_percent' for schools where 'internet_access_percent' is less than 70%?
 ```sql
 SELECT AVG(dropout_rate_percent) AS average_dropout_rate
 FROM education_inequality
 where internet_access_percent < 70;
 ```
-### Which school type (Public, Private, Charter) has the highest average test score?
+#### Which school type (Public, Private, Charter) has the highest average test score?
 ```sql
 SELECT school_type,AVG(avg_test_score_percent) AS average_test_score
 FROM education_inequality
@@ -68,7 +68,7 @@ GROUP BY school_type
 ORDER BY average_test_score
 LIMIT 1;
 ```
-### Which state has the highest percentage of low-income students on average?
+#### Which state has the highest percentage of low-income students on average?
 ```sql
 SELECT state,AVG(percent_low_income) AS average_percent_low_income
 FROM education_inequality
